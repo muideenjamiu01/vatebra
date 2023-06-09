@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import CountryCatalog from "./pages/countryCatalog";
+
+// const client = new ApolloClient({
+//   uri: `https://restcountries.com`,
+//   cache: new InMemoryCache(),
+// });
+
+const App = () => (
+  <div className="container mx-auto">
+    <h2 className="font-medium text-xl text-center py-10">Countries Catalog</h2>
+    <CountryCatalog />
+  </div>
+);
 
 export default App;
