@@ -76,11 +76,11 @@ function CountryCatalog() {
           {openDetailsModal && (
             <DetailsModal closeModal={setOpenDetailsModal} data={data} />
           )}
-          {filteredCountries?.length === 0 && <p>Oop, Country not found</p>}
+          {filteredCountries?.length === 0 && <p>Oops, Country not found</p>}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center p-4 md:px-8">
             {filteredCountries?.slice(0, resultsDisplayLimit).map((country) => (
               <div
-                className="mt-6 w-[250px] bg-[#f5f5f5] rounded-md p-4"
+                className="mt-6 w-[200px] xl:w-[250px] bg-[#f5f5f5] rounded-md p-4"
                 key={country.name.common}
               >
                 <div className="flex gap-x-4 items-center mb-2">
