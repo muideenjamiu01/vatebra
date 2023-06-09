@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
-import { useQuery, gql } from "@apollo/client";
+// import styled from "styled-components";
+// import { useQuery, gql } from "@apollo/client";
 
 // const GET_COUNTRIES = gql`
 //   query {
